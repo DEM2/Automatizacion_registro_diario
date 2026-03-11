@@ -4,19 +4,22 @@ sales_register = []
 summary=[]
 to_continue = True
 
-while to_continue != False :
+while to_continue :
 
     print("\n","-"*30)
     print("         Sales Record")
     print("-"*30)
 
     Product=input("\n Enter the product name: ")
-    price=float(input("\n Enter the price per unit: "))
-    sales=int(input("\n How many units?: "))
+    try:
+       price=float(input("\n Enter the price per unit: "))
+       sales=int(input("\n How many units?: "))
 
-    record_sales(sales_register, Product, price, sales)
-    option = input("\n Do you want to continue with the registration? Y for yes or N for no: ")
-    if (option=="N"):  to_continue=False
+       record_sales(sales_register, Product, price, sales)
+       option = input("\n Do you want to continue with the registration? Y for yes or N for no: ")
+       if (option=="N"):  to_continue=False
+    except ValueError:
+        print("\n Invalid input. Please  enter a number")
     
 summary=total_calculations(sales_register)
 daily_summary(summary)
