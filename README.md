@@ -29,5 +29,5 @@ Simplify the process of recording sales and provide a clear summmary about the d
 python main.py 
 ```
 
-![Flow diagram](images/Automation_of_a_store's_daily_sales_records.png) 
+![Flow diagram](images/Automation_daily_sales_records.png) 
 
