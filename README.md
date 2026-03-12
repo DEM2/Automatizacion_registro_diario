@@ -28,6 +28,7 @@ Simplify the process of recording sales and provide a clear summmary about the d
 ```bash 
 python main.py 
 ```
+## Flowchart
 
-![Flow diagram](images/Automation_daily_sales_records.png) 
+![Flowchart](images/Automation_daily_sales_records.png) 
 
