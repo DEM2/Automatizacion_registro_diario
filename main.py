@@ -1,7 +1,6 @@
 from services import  record_sales, daily_summary, total_calculations
 
 sales_register = []
-summary=[]
 to_continue = True
 
 while to_continue :
